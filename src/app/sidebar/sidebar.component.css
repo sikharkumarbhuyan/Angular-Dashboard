@@ -1,0 +1,39 @@
+.sidebar{
+    background-color: #192132;
+    page-break-after: 10px;
+    color: #d2cccc;
+    font-weight: 600;
+    height: 80em;
+    padding: 20px;
+    position: relative;
+    transition-duration: 500ms;
+}
+.sidebar img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px
+}
+.user{margin: 30px 0;}
+.user img{float: left;}
+ul{
+    list-style-type: none;
+    padding:0;
+    margin-top: 50px
+}
+ul li{
+    margin: 15px 0;
+}
+span:hover{cursor: pointer;}
+ li.active{
+     border-left: 2px solid red;
+     padding-left: 10px
+ }
+
+@media only screen and (max-width: 1024px){
+    .sidebar{
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+    }
+}

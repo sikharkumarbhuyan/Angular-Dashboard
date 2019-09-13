@@ -1,0 +1,76 @@
+<div class="row">
+<div class="top">
+    <i class="fa fa-search"></i>
+  <input type="text" placeholder="Search..">
+  <div class="icons">
+    <i class="fa fa-cog"></i>
+     <i class="fa fa-bell"></i>
+     <i class="fa fa-lock"></i>
+     </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-md-12" style="margin-top: 20px">
+    <div class="bg-lightblue">
+        <div class="icons"> 
+            <i class="fa fa-window-minimize"></i>
+            <i class="fa fa-times"></i>
+        </div>
+      <h5>Project Activity</h5>
+      <div style="margin: 10px">
+        <button class="btn btn-default">Month<i class="fa fa-angle-down"></i></button>
+        <button class="btn btn-default">Range<i class="fa fa-angle-down"></i></button>
+        <button class="btn btn-primary" style="color:#fff">List<i class="fa fa-angle-down" style="color:#fff"></i></button>
+        <button class="btn btn-danger" style="color:#fff">Current<i class="fa fa-angle-down" style="color:#fff"></i></button>
+        <button class="btn btn-default" style="float: right;margin-right: 20px">Today<i class="fa fa-angle-down"></i></button>
+      </div>
+      <highcharts-chart 
+      [Highcharts]="Highcharts1"
+      [options]="chartOptions1"
+      style="width: 100%; height: 400px; display: block;"
+    ></highcharts-chart>
+    </div>
+  </div>
+
+  <div class="col-md-4" style="margin-top: 20px">
+    <div class="bg-lightblue" style="padding-bottom: 20px">
+        <div class="icons"> 
+            <i class="fa fa-window-minimize"></i>
+            <i class="fa fa-times"></i>
+        </div>
+      <h5>Involved Team</h5>
+      <ul *ngIf="users" >
+          <li *ngFor="let user of users">
+            <img [src]="user.avatar">
+            <div class="userdata">
+              <p>{{ user.first_name }}</p>
+              <p>{{ user.first_name }}</p>
+            </div>
+            <!-- <img [src]="user.avatar"> -->
+          </li>
+        </ul>
+        <button class="btn btn-success" style="margin: 0 auto;display:block;color: #fff">Add Teammate<i class="fa fa-angle-down" style="color:#fff"></i></button>
+      </div>
+  </div>
+
+  <div class="col-md-8" style="margin: 20px 0">
+      <div class="bg-lightblue">
+          <div class="icons"> 
+              <i class="fa fa-window-minimize"></i>
+              <i class="fa fa-times"></i>
+          </div>
+      <h5>Manager Activity</h5>
+      <div style="margin: 10px">
+          <button class="btn btn-default">February<i class="fa fa-angle-down"></i></button>
+          <button class="btn btn-default">Incoming phone Calls<i class="fa fa-angle-down"></i></button>
+          <p style="float: right;margin-top: 10px;font-weight: 600;color: #757575;">Total: <span style="color:red">23674</span></p>
+          </div>
+      <highcharts-chart 
+      [Highcharts]="Highcharts2"
+      [options]="chartOptions2"
+      style="width: 100%; height: 400px; display: block;"
+    ></highcharts-chart>
+    </div>
+  </div>
+
+</div>

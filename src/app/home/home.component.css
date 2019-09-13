@@ -1,0 +1,70 @@
+.top{
+    padding: 15px;
+    background-color: #eff7ff
+}
+.fa-search{margin-right: 20px}
+.fa{
+    font-size: 20px;
+    margin: 0 10px;
+    color: #a3a7b7
+}
+.top input{
+    border: none;
+    background: transparent;
+    width: 40%;
+    font-weight: bold;
+    color: #a3a7b7
+}
+.icons{
+    float: right;
+    margin-top: 4px
+}
+.bg-lightblue .fa{font-size: 13px}
+
+
+.bg-lightblue{
+    background-color: #eff7ff;
+    box-shadow: 1px 1px 1px 1px #c0c0c0;
+    border-radius: 5px;
+}
+ul{
+    list-style-type: none;
+    padding-left: 15px
+}
+ul li{
+    margin: 20px 0
+}
+.userdata p:first-child{
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 7px
+}
+ul li img{
+    border-radius: 50%;
+    width: 45px;
+    float: left;
+    margin-right: 20px
+}
+h5{margin: 0;
+    border-bottom: 1px solid #e6e7f6;
+    padding: 10px;
+    font-weight: bold
+}
+highcharts-chart {margin-top: 20px;}
+.btn{border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+margin: 5px;
+padding: 4px 0 4px 16px;
+    color: #757575;
+    font-weight: 600;}
+.btn-default{background-color: transparent}
+
+
+@media only screen and (max-width: 1024px){
+    .top{
+        width: 84%;
+        float: right;
+    }
+}
